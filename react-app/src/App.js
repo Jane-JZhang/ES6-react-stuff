@@ -10,14 +10,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('/users', {
-      headers : {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-     })
+    fetch('/users')
     .then((res) => {
-      console.info('the response data from /users is ===', res);
       res.json()
     })
     .then((users) => {

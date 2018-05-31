@@ -7,15 +7,12 @@ export default class SearchBar extends React.Component {
   }
 
   searchStocks = event => {
-    console.log('started type');
+    console.log('started typing');
   }
 
   render() {
-    let inlineStyle = {
-      textAlign: 'center'
-    };
     return (
-      <div className="search-bar" style={inlineStyle}>
+      <div className="search-bar">
         <input type="text" name="search stock" onKeyDown={this.searchStocks} placeholder="Type company name or stock symbol" />
         <span className="fa fa-search search"></span>
       </div>
