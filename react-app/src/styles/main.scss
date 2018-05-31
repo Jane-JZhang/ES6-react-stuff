@@ -1,0 +1,18 @@
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss';
+@import "themeColors";
+$themeFont: verdana, sans-serif;
+
+body {
+  font: $themeFont;
+  background-color: $themeColor-Light;
+
+  h1, h2 {
+    color: $themeColor-dark;
+  }
+
+  .app {
+    text-align: center;
+    margin-top: 160px;
+  }
+}

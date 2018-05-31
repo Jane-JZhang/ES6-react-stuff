@@ -1,0 +1,50 @@
+@import "utilities";
+
+.search-bar {
+  position: relative;
+  display: inline-block;
+
+  @media #{$small} {
+    margin: 0 15px 0 0;
+    width: 90%;
+  }
+
+  @media #{$medium} {
+    width: 70%;
+  }
+
+  @media #{$large} {
+    width: 800px;
+  }
+
+  input[type=text] {
+    padding: 0 0 0 10px;
+    height: 36px;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 16px;
+    width: 100%;
+    position: absolute;
+  }
+
+  input[type=text]:focus {
+    border: 1px solid rgba(0, 123, 255, 1);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 1);
+  }
+
+  .search {
+    display: block;
+    height: 24px;
+    width: 24px;
+    right: 0;
+    line-height: 36px;
+    position: absolute;
+  }
+
+  .search:focus, .search:hover, .search:active {
+    cursor: pointer;
+  }
+}
