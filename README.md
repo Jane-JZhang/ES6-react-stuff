@@ -2,7 +2,7 @@
 npm install
 
 ### Start server
-npm run server
+npm run server <br />
 npm run client
 
 ### Check if server is running
