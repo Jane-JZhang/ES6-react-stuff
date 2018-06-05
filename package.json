@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "client": "cd react-app && npm run start",
-    "server": "node app.js"
+    "server": "node app.js",
+    "install": "if [ ! -e \"node_modules\" ]; then npm install; fi; cd react-app && npm install"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
