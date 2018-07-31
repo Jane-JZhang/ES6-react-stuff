@@ -3,8 +3,7 @@ Install node modules dependencies for server and client <br />
 `npm run install`
 
 ### Start server
-`npm run server` <br />
-`npm run client`
+`npm run start`
 
 ### Check if server is running
-Go to http://localhost:3000/
+Go to http://localhost:3001/
