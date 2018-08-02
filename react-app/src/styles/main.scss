@@ -1,10 +1,11 @@
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss';
 @import "themeColors";
-$themeFont: verdana, sans-serif;
+$themeFont: verdana, arial, sans-serif;
 
 body {
   font: $themeFont;
+  color: $bodyColor;
   background-color: $themeColor-Light;
 
   h1, h2 {

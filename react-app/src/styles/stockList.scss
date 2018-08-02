@@ -1,0 +1,18 @@
+.stock-list {
+  ul {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    border: 1px solid #888;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px;
+    b {
+      width: 140px;
+      display: inline-block;
+      text-align: right;
+      margin-right: 40px;
+    }
+  }
+  margin-top: 60px;
+}

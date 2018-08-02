@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 import './styles/main.scss';
 import SearchBar from './components/SearchBar';
+import StockList from './components/StockList';
+import {INIT_REQUEST_URL} from './utilities/data/constants';
 
 class App extends Component {
-  state = {users: []}
-
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
+    this.state = {};
   }
 
-  componentDidMount() {
-    fetch('/users')
-    .then((res) => {
-      res.json()
-    })
-    .then((users) => {
-      this.setState({ users });
+  componentWillMount() {
+    fetch(INIT_REQUEST_URL)
+    .then((response) => {
+      return response.json();
+    }).then((response) => {
+      const {AAPL, FB, GOOG} = response;
+      this.setState({AAPL, FB, GOOG});
     });
   }
 
@@ -24,6 +25,7 @@ class App extends Component {
       <div className="app">
         <h1>Search a stock price</h1>
         <SearchBar />
+        <StockList stockData={this.state} />
       </div>
     );
   }
